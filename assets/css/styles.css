@@ -113,13 +113,15 @@ a {
                     color: #F2F2F2;
                 }
 
-            .btn-content-btn--pricing {
+            .btn-content-btn--pricing,
+            .btn-buy {
                 background-color: #5A728C;
                 border: 2px solid #5A728C;
                 color: #F2F2F2;
             }
 
-                .btn-content-btn--pricing:hover {
+                .btn-content-btn--pricing:hover,
+                .btn-buy:hover {
                     background-color: #F2F2F2;
                     border: 2px solid #5A728C;
                     color: #5A728C;
@@ -137,7 +139,8 @@ a {
             min-height: 350px;
         }
 
-.about-us {
+.about-us,
+.pricing {
     display: flex;
     width: auto;
     height: auto;
@@ -145,19 +148,21 @@ a {
     flex-direction: column;
     border-bottom: 2px solid #5A728C;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
-    .about-us h1 {
+    .title-section {
         font-size: 20px;
     }
 
-    .about-us-items {
+    .about-us-items,
+    .pricing-items {
         display: flex;
         width: 100%;
         padding: 0 10rem 0;
         flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 2rem;
+        gap: 4rem;
+        justify-content: center;
     }
 
     .about-us-item {
@@ -178,12 +183,13 @@ a {
         transform: scale(1);
     }
 
-        .about-us-item:hover {
+        .about-us-item:hover,
+        .pricing-item:hover {
             transform: scale(1.1);
             transition: .4s ease-in;
         }
 
-        .title-about-us-item {
+        .title-item {
             display: flex;
             width: 100%;
             height: auto;
@@ -195,7 +201,7 @@ a {
             font-size: 17px;
         }
 
-        .content-about-us-item {
+        .content-item {
             display: flex;
             padding: 1.5rem 1.2rem 1.5rem;
             flex-direction: column;
@@ -205,8 +211,79 @@ a {
             justify-content: center;
         }
 
-        .content-about-us-item li {
+        .content-item-pricing {
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            justify-content: flex-start;
             text-align: start;
+            padding: 1rem 2.5rem 1rem;;
+        }
+
+        .content-item-pricing li {
+            list-style: none;
+        }
+
+        .content-item-pricing h2 {
+            font-size: 20px;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .content-item-pricing h3 {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .check {
+            color: green;
+        }
+
+        .cross {
+            color: red;
+        }
+
+        .content-item li {
+            text-align: start;
+        }
+
+    .pricing-items {
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .pricing-item {
+        display: flex;
+        flex: 20%;
+        min-width: 310px;
+        max-width: 330px;
+        height: auto;
+        min-height: 450px;
+        border: 2px solid #5A728C;
+        border-radius: 5px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 3rem;
+        transition: .4s ease-in-out;
+        cursor: pointer;
+        transform: scale(1);
+    }
+
+        .btn-buy {
+            display: flex;
+            width: 100%;
+            height: auto;
+            padding: 12px 2rem 12px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 17px;
+            cursor: pointer;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: .3s ease-in-out;
+            margin: 10px 0 1.5rem;
         }
 
 /* Responsive 1440px */
