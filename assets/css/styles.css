@@ -144,7 +144,8 @@ a {
         }
 
 .about-us,
-.pricing {
+.pricing,
+.characteristics {
     display: flex;
     width: auto;
     height: auto;
@@ -155,12 +156,17 @@ a {
     margin-bottom: 2rem;
 }
 
+    .pricing {
+        margin-bottom: 0;
+    }
+
     .title-section {
         font-size: 20px;
     }
 
     .about-us-items,
-    .pricing-items {
+    .pricing-items,
+    .characteristics-items {
         display: flex;
         width: 100%;
         padding: 0 10rem 0;
@@ -193,9 +199,9 @@ a {
             transition: .4s ease-in;
         }
 
-        .title-item {
+        .title-item,
+        .title-item-img {
             display: flex;
-            width: 100%;
             height: auto;
             padding: 1rem;
             text-align: center;
@@ -204,6 +210,22 @@ a {
             justify-content: center;
             font-size: 17px;
         }
+
+            .title-item {
+                width: 100%;
+            }
+
+            .title-item-img {
+                width: auto;
+                border-radius: 50%;
+                margin-top: 3rem;
+                padding: 1.5rem;
+            }
+
+            .title-item-img img {
+                width: 50px;
+                height: 50px;
+            }
 
         .content-item {
             display: flex;
@@ -252,7 +274,6 @@ a {
         }
 
     .pricing-items {
-        justify-content: center;
         gap: 4rem;
     }
 
@@ -288,6 +309,26 @@ a {
             font-weight: 500;
             transition: .3s ease-in-out;
             margin: 10px 0 1.5rem;
+        }
+
+    .characteristics-item {
+        display: flex;
+        flex: 20%;
+        min-width: 320px;
+        max-width: 330px;
+        height: auto;
+        border-radius: 5px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 3rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 0.5rem 5px 1.5rem;
+    }
+
+        .characteristics-item b {
+            font-size: 18px;
         }
 
 /* Responsive 1440px */
@@ -376,6 +417,10 @@ a {
         min-width: 350px;
         min-height: 250px;
     }
+
+    .characteristics-items {
+        gap: 3rem;
+    }
 }
 
 /* Responsive 768px */
@@ -404,5 +449,9 @@ a {
 
     .header-list {
         display: none;
+    }
+
+    .characteristics-items {
+        gap: 1rem;
     }
 }
