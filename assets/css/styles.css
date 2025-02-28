@@ -47,6 +47,10 @@ a {
             transition: .15s ease-in;
         }
 
+    .btn-menu {
+        display: none;
+    }
+
 .banner-introducing {
     display: flex;
     width: 100%;
@@ -377,4 +381,28 @@ a {
 /* Responsive 768px */
 @media screen and (max-width: 768px) {
     
+}
+
+/* Responsive 425px */
+@media screen and (max-width: 425px) {
+    .btn-menu {
+        display: flex;
+        width: auto;
+        height: auto;
+        background: transparent;
+        border: none;
+    }
+
+        .btn-menu img {
+            width: 26px;
+            height: 24px;
+        }
+
+    .header {
+        justify-content: flex-end;
+    }
+
+    .header-list {
+        display: none;
+    }
 }
