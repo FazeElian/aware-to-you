@@ -306,7 +306,7 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
         align-items: center;
         margin-top: 3rem;
-        transition: .4s ease-in-out;
+        transition: .1s ease-in-out;
         cursor: pointer;
         transform: scale(1);
     }
@@ -323,7 +323,7 @@ body::-webkit-scrollbar-thumb {
             cursor: pointer;
             border-radius: 6px;
             font-weight: 500;
-            transition: .3s ease-in-out;
+            transition: .1s ease-in-out;
             margin: 10px 0 1.5rem;
         }
 
